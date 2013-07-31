@@ -1,1 +1,9 @@
 node_modules
+
+# Ignore Vim tempfiles
+*~
+*.swp
+*.swo
+
+# Ignore ctags
+tags
