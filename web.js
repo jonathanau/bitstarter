@@ -4,7 +4,9 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
   "use strict";
-  response.send('Hello World2!');
+  var fs = require('fs');
+  var content = fs.readFileSync("index.html").toString();
+  response.send(content);
 });
 
 var port = process.env.PORT || 5000;
